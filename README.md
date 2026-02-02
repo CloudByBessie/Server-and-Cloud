@@ -1,3 +1,6 @@
+<img width="1536" height="1024" alt="CloudByBessieLogo" src="https://github.com/user-attachments/assets/ad6e36b4-e8b8-4068-a145-998667115d7f" />
+
+
 
 # Server-and-Cloud
 
@@ -61,4 +64,5 @@ If you’re a recruiter, mentor, or fellow learner, feel free to explore and fol
 ## 📌 License
 
 This project is licensed under the MIT License.
+
 
