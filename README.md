@@ -19,18 +19,6 @@ All content here reflects my commitment to learning in public and building pract
 
 ---
 
-## 👩🏽‍💻 About Me
-
-I’m **Bessie**, a Cloud & Server Administration student and tech enthusiast with a strong interest in infrastructure, security, and cloud technologies.
-
-**Certifications & Training**
-- CompTIA Network+
-- CompTIA Security+
-- Microsoft SC-900
-- OSC 
-
----
-
 ## 🔧 What You’ll Find Here
 
 This repository includes:
