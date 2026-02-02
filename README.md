@@ -1,4 +1,5 @@
-<img width="1536" height="1024" alt="CloudByBessieLogo" src="https://github.com/user-attachments/assets/ad6e36b4-e8b8-4068-a145-998667115d7f" />
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/5f6c83df-5b83-4d29-9fbd-5ffedfba1fce" />
+
 
 
 
