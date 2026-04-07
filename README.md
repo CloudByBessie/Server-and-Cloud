@@ -22,7 +22,7 @@ This space captures practical labs, configurations, and notes as I build, manage
 - Lab design decisions  
 
 👉 Explore the lessons here:  
-🔗 https://github.com/CloudByBessie/Server-and-Cloud/tree/LetsLearn
+🔗 (https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn%20)
 
 ---
 
