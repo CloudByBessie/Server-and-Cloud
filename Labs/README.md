@@ -30,7 +30,8 @@ This is a simulated cyber war between two forces:
 <h2 align="center">⚡ Thunderbyte</h2>
 
 <p align="center">
-<img width="300" alt="Futuristic ThunderByte logo with circuits" src="https://github.com/user-attachments/assets/ac8a1a6a-6b48-45ad-ad15-79f711062816" />
+<img width="300" alt="image" src="https://github.com/user-attachments/assets/8d02764a-0a4e-4946-9297-9b1d168a3d65" />
+
 </p>
 
 <p align="center"><em>Attackers who have been breaking systems since the beginning of tech</em></p>
