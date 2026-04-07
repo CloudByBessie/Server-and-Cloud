@@ -5,28 +5,47 @@
 </p>
 
 <p align="center">
-<strong>Welcome to the battlefield.</strong><br>
-<br>
-This is not just a collection of labs.<br>
-This is a simulated war between two forces:
+  <em><strong>Red Team vs Blue Team Simulation</strong></em>
 </p>
 
+<p align="center">
+<strong>Welcome to the battlefield.</strong><br>
+<br>
+This is not just a collection of labs—<br>
+This is a simulated cyber war between two forces:
+</p>
+
+---
 
 <h2 align="center">☁️ Cloud Tech</h2>
-<img width="1536" height="1024" alt="CloudTech logo with electric design" src="https://github.com/user-attachments/assets/5cf4331a-c183-4fd1-984c-fc7065b9c8a3" />
+
+<p align="center">
+<img width="300"  alt="CloudTech logo with electric design" src="https://github.com/user-attachments/assets/5cf4331a-c183-4fd1-984c-fc7065b9c8a3" />
+</p>
 
 <p align="center"><em>Defenders of modern infrastructure</em></p>
 
+---
+
 <h2 align="center">⚡ Thunderbyte</h2>
-<img width="1536" height="1024" alt="Futuristic ThunderByte logo with circuits" src="https://github.com/user-attachments/assets/ac8a1a6a-6b48-45ad-ad15-79f711062816" />
+
+<p align="center">
+<img width="300" alt="Futuristic ThunderByte logo with circuits" src="https://github.com/user-attachments/assets/ac8a1a6a-6b48-45ad-ad15-79f711062816" />
+</p>
 
 <p align="center"><em>Attackers who have been breaking systems since the beginning of tech</em></p>
 
 ---
 
+> ⚡ Every misconfiguration is an opportunity. Every system is a target.
+>  🛡️ Defense begins with understanding the attack.
+>  🎯 This lab is where both sides collide.
+
+---
+
 ## ⚔️ The Scenario
 
-Cloud environments are powerful—but often misconfigured.
+Cloud environments are powerful—but rarely perfectly configured.
 
 Thunderbyte knows this.
 
@@ -36,7 +55,7 @@ They rely on:
 - Poor identity management  
 - Human oversight  
 
-Cloud Tech exists to find and fix those weaknesses before attackers do.
+Cloud Tech exists to identify and eliminate those weaknesses before attackers can exploit them.
 
 ---
 
