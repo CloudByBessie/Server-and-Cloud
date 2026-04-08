@@ -5,8 +5,8 @@
 
 ## 📚 Quick Navigation
 
-- [Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-executive-summary)
 - [Quick Wins](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-quick-wins-at-a-glance)
+- [Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-executive-summary)
 - [Case Overview](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-case-overview)
 - [Attacker POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-attacker-pov--thunderbyte-recon)
 - [Defender Analysis](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-defender-pov--cloudtech-analysis)
@@ -18,6 +18,18 @@
 > ⚡ Focus: Active Directory, DNS, Identity Infrastructure, Tier-0 Troubleshooting
 
 > 🧠 Real-world simulation of a Tier-0 identity failure caused by layered misconfigurations — diagnosed and resolved using structured troubleshooting and security-focused analysis.
+
+
+---
+
+
+## ⚡ Quick Wins (At a Glance)
+
+- Root Cause: Multi-factor DNS and NIC misconfiguration  
+- Impact: ~50% domain join failure rate  
+- Key Fix: NIC simplification + DNS correction + SRV restoration  
+- Outcome: Fully stable and predictable identity environment  
+
 
 ---
 
@@ -76,14 +88,6 @@ By simplifying the network configuration, correcting DNS dependencies, and resto
 👉 This case highlights a critical reality in modern infrastructure:
 
 **Misconfiguration — not exploitation — is often the primary cause of system failure.**
----
-
-## ⚡ Quick Wins (At a Glance)
-
-- Root Cause: Multi-factor DNS and NIC misconfiguration  
-- Impact: ~50% domain join failure rate  
-- Key Fix: NIC simplification + DNS correction + SRV restoration  
-- Outcome: Fully stable and predictable identity environment  
 
 ---
 
