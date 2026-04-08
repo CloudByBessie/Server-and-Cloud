@@ -66,6 +66,15 @@ By simplifying the network configuration, correcting DNS dependencies, and resto
 **Misconfiguration — not exploitation — is often the primary cause of system failure.**
 ---
 
+## ⚡ Quick Wins (At a Glance)
+
+- Root Cause: Multi-factor DNS and NIC misconfiguration  
+- Impact: ~50% domain join failure rate  
+- Key Fix: NIC simplification + DNS correction + SRV restoration  
+- Outcome: Fully stable and predictable identity environment  
+
+---
+
 ## 🧩 Case Overview
 
 CloudTech launched a fresh AD environment:
@@ -131,6 +140,19 @@ The failure was not caused by a single issue, but by the interaction of:
 
 ---
 
+
+## 🧪 Example Attack Scenario
+
+1. Attacker performs network scan and observes inconsistent responses  
+2. Attempts DNS resolution and receives unreliable results  
+3. Queries SRV records and finds missing entries  
+4. Infers domain instability and weak configuration hygiene  
+5. Identifies opportunity for deeper reconnaissance due to lack of predictability  
+
+💡 Insight: Misconfiguration creates visibility gaps attackers can observe without exploiting vulnerabilities.
+
+
+---
 # ⚡ Attacker POV — Thunderbyte Recon
 
 Thunderbyte (⚡) gains internal access and begins passive reconnaissance.
