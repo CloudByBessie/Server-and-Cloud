@@ -1,7 +1,7 @@
 <p align="center">  <img width="700" alt="Case 001 The Domain That Couldnt Find Itself" src="https://github.com/user-attachments/assets/cf208d1a-a3a6-43e1-b989-3340518ca786" /> </p>
 
 # 🌩️ CloudTech Case 001 — “The Domain That Couldn’t Find Itself” 
-### A Security Engineering Case Study by CloudTech Labs 
+### Diagnosing and Stabilizing a Tier-0 Identity Failure in Active Directory
 
 > ⚡ Focus: Active Directory, DNS, Identity Infrastructure, Tier-0 Troubleshooting
 
@@ -11,18 +11,59 @@
 
 ## ⭐ Executive Summary 
 
-CloudTech deployed a new Active Directory domain that appeared perfectly healthy — green checks everywhere, no warnings, no obvious failures. Yet clients intermittently failed to join the domain, DNS lookups behaved unpredictably, and identity services broke in ways that didn’t match the clean UI.
+CloudTech deployed a new Active Directory environment that appeared fully operational — no visible errors, healthy services, and successful initial configuration.  
 
-This case demonstrates my ability to:
+However, underlying instability quickly surfaced:
 
-- Diagnose identity failures in Windows Server environments  
-- Understand DNS → Active Directory dependencies at a deep, architectural level  
-- Troubleshoot with both attacker and defender mindset  
-- Stabilize misconfigured infrastructure under real‑world conditions  
-- Communicate complex technical issues clearly, concisely, and professionally  
+- Intermittent domain join failures  
+- Inconsistent DNS resolution  
+- Missing or unreliable SRV records  
 
-This was not a simple “fix the DNS” problem — it was a layered failure where multiple small misconfigurations compounded into a major outage. The resolution required structured troubleshooting, DNS repair, AD cleanup, and network stabilization.
+Despite a “healthy” appearance, the identity infrastructure was fundamentally unreliable.
 
+---
+
+This case documents a structured, layered troubleshooting approach used to identify and resolve a multi-factor failure affecting Tier-0 identity services.
+
+Rather than immediately escalating to advanced diagnostics, the investigation prioritized:
+
+- Validation of Domain Controller network configuration  
+- DNS dependency analysis  
+- Elimination of multi-NIC conflicts  
+- Restoration of proper SRV record registration  
+- Cleanup of stale Active Directory objects  
+
+---
+
+## 🧠 Key Insight
+
+The root cause was not a single failure, but the interaction of multiple small misconfigurations:
+
+- Improper DNS settings  
+- Multi-homed network instability  
+- Missing SRV records  
+- Residual Active Directory artifacts  
+
+---
+
+## 🏁 Outcome
+
+By simplifying the network configuration, correcting DNS dependencies, and restoring proper AD/DNS registration, the environment was stabilized into a predictable and fully functional identity system.
+
+---
+
+## 💡 What This Demonstrates
+
+- Strong understanding of Active Directory and DNS dependencies  
+- Ability to troubleshoot Tier-0 infrastructure using a structured approach  
+- Recognition of the importance of validating fundamentals before escalating complexity  
+- Awareness of the difference between lab optimization and enterprise design principles  
+
+---
+
+👉 This case highlights a critical reality in modern infrastructure:
+
+**Misconfiguration — not exploitation — is often the primary cause of system failure.**
 ---
 
 ## 🧩 Case Overview
