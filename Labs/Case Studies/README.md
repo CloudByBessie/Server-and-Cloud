@@ -9,7 +9,7 @@ A quick-access index of all CloudTech vs Thunderbyte encounters:
 
 | Case # | Title | Description |
 |--------|--------|-------------|
-| **Case‑001** | *The Domain That Couldn’t Find Itself* | A misconfigured DNS + AD environment spirals into chaos until CloudTech restores order. |
+| **[Case‑001](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md)**| *The Domain That Couldn’t Find Itself* | A misconfigured DNS + AD environment spirals into chaos until CloudTech restores order. |
 | **Case‑002** | *Coming Soon* | The battle continues! |
 
 ### 🧱 Tech Focus
