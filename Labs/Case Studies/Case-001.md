@@ -3,6 +3,18 @@
 # 🌩️ CloudTech Case 001 — “The Domain That Couldn’t Find Itself” 
 ### Diagnosing and Stabilizing a Tier-0 Identity Failure in Active Directory
 
+## 📚 Quick Navigation
+
+- [Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-executive-summary)
+- [Quick Wins](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-quick-wins-at-a-glance)
+- [Case Overview](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-case-overview)
+- [Attacker POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-attacker-pov--thunderbyte-recon)
+- [Defender Analysis](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-defender-pov--cloudtech-analysis)
+- [Investigation & Remediation](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-investigation--remediation)
+- [Lessons Learned](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-lessons-learned)
+- [Final Takeaway](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-final-takeaway)
+
+  
 > ⚡ Focus: Active Directory, DNS, Identity Infrastructure, Tier-0 Troubleshooting
 
 > 🧠 Real-world simulation of a Tier-0 identity failure caused by layered misconfigurations — diagnosed and resolved using structured troubleshooting and security-focused analysis.
