@@ -6,6 +6,33 @@
 
 ---
 
+<p align="center"><strong>🔎 Navigate this guide like a real security playbook</strong></p>
+
+### 🔐 Core Concepts
+- [Privilege Escalation](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-privilege-escalation)  
+- [Kerberos Authentication](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#%EF%B8%8F-kerberos-authentication)  
+
+---
+
+### 🧨 Attack Techniques
+- [Pass-the-Hash (PtH)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#%EF%B8%8F-pass-the-hash-pth)  
+- [Kerberoasting](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-kerberoasting)  
+- [AS-REP Roasting](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-as-rep-roasting)  
+
+---
+
+### ⚠️ Misconfiguration Risks
+- [Weak Permissions](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-weak-permissions)  
+- [Over-Privileged Accounts](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-over-privileged-accounts)  
+
+---
+
+### 🧠 Attack Flow & Strategy
+- [How It All Connects](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-how-it-all-connects)  
+- [Quick Reference Cheat Sheet](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-quick-reference-cheat-sheet)  
+
+---
+
 ## 🧭 Visual Attack Flow — How Attackers Move Through the Airport
 
 <p align="center">
