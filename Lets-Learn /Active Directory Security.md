@@ -6,33 +6,6 @@
 
 ---
 
-
-<p align="center"><strong>🔎 Navigate this guide like a real security playbook</strong></p>
-
-### 🔐 Core Concepts
-- [Privilege Escalation](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-privilege-escalation)  
-- [Kerberos Authentication](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#%EF%B8%8F-kerberos-authentication)  
-
----
-
-### 🧨 Attack Techniques
-- [Pass-the-Hash (PtH)](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#%EF%B8%8F-pass-the-hash-pth)  
-- [Kerberoasting](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-kerberoasting)  
-- [AS-REP Roasting](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-as-rep-roasting)  
-
----
-
-### ⚠️ Misconfiguration Risks
-- [Weak Permissions](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-weak-permissions)  
-- [Over-Privileged Accounts](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-over-privileged-accounts)  
-
----
-
-### 🧠 Attack Flow & Strategy
-- [How It All Connects](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-how-it-all-connects)  
-- [Quick Reference Cheat Sheet](https://github.com/CloudByBessie/Server-and-Cloud/new/main/Lets-Learn%20#-quick-reference-cheat-sheet)  
-
----
 ## 🧭 Visual Attack Flow — How Attackers Move Through the Airport
 
 <p align="center">
