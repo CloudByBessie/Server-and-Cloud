@@ -9,6 +9,65 @@
 
 ---
 
+## 🔎 Jump to Section
+
+### ⚡ Overview
+
+[⚡ Quick Wins](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-quick-wins)
+
+[🧾 Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-executive-summary)
+
+[🧩 Case Overview](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-case-overview)
+
+[📊 Quantified Impact](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-quantified-impact)
+
+---
+
+### 🏢 Environment & Misconfiguration
+  
+[📸 Active Directory Environment](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-active-directory-environment)
+
+[📸 Server Misconfiguration](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-server-misconfiguration)
+
+[📸 Workstation Evidence](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-workstation-evidence)
+
+---
+
+### 💥 Attack Path
+
+[💥 Example Attack Scenario](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-example-attack-scenario)
+
+[🧑‍💻 Attacker Foothold](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-attacker-foothold)
+
+[🌐 Network Discovery](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-network-discovery)
+
+[🛰️ Service Enumeration](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-service-enumeration)
+
+[🧠 DNS Discovery](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-dns-discovery)
+
+[📂 SMB Enumeration & Share Access](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-smb-enumeration--share-access)
+
+---
+
+### 🛡️ Response & Lessons
+
+[🔎 Investigation & Remediation](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-investigation--remediation)
+
+[📚 Lessons Learned](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-lessons-learned)
+
+[🔥 Final Takeaway](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-final-takeaway)
+
+
+---
+
+
+### 🧪 Appendix
+
+[🧪 Reproducibility Appendix](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-reproducibility-appendix--sanitized-commands)
+
+
+---
+
 ## ⚡ Quick Wins
 
 - Identified Active Directory infrastructure from an internal foothold  
