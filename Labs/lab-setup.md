@@ -20,6 +20,7 @@ This environment forms the foundation for demonstrating real-world security engi
 - Offensive security testing in a safe, isolated environment
 
 It shows the ability to design, build, and manage a multi-system enterprise-style lab — a core skill for security engineers.
+CT-SVR01 adds a realistic member server to the lab, making the environment closer to a real enterprise network and supporting more advanced attack and defense scenarios.
 
 
 ---
@@ -37,27 +38,28 @@ This environment is designed for:
 
 ## 🏗️ Lab Diagram
 
-<img width="308" height="143" alt="image" src="https://github.com/user-attachments/assets/0a949485-1efb-4c27-b973-e5e0a01e5578" />
+<img width="519" height="370" alt="image" src="https://github.com/user-attachments/assets/17c0d74c-6140-409c-aab0-48e29b111864" />
 
-<em>Figure: Basic virtual lab topology showing three systems connected within an isolated internal network.</em>
+<em>Figure: Basic virtual lab topology showing four systems connected within an isolated internal network.</em>
 
 ## 🖥️ Lab Components
 
-| Machine Name | Role            | Operating System         |
-|--------------|-----------------|--------------------------|
-| CT-DC01      | Server          | Windows Server 2019/2022 |
-| CT-CL01      | Workstation     | Windows 10/11            |
-| TB-Kali01    | Linux System    | Kali Linux               |
-
+| Machine Name | Role                         | Operating System         |
+|--------------|------------------------------|--------------------------|
+| CT-DC01      | Domain Controller / DNS      | Windows Server 2019/2022 |
+| CT-SVR01     | Member Server                | Windows Server 2019/2022 |
+| CT-CL01      | Workstation                  | Windows 10/11            |
+| TB-Kali01    | Attacker System              | Kali Linux               |
 ---
 
 ## ⚙️ System Specifications
 
 | Machine Name | CPU | RAM  | Storage |
-|--------------|-----|------|----------|
-| CT-DC01      | 2   | 4 GB | 50 GB    |
-| CT-CL01      | 2   | 4 GB | 50 GB    |
-| TB-Kali01    | 2   | 2 GB | 40 GB    |
+|--------------|-----|------|---------|
+| CT-DC01      | 2   | 4 GB | 50 GB   |
+| CT-SVR01     | 2   | 4 GB | 50 GB   |
+| CT-CL01      | 2   | 4 GB | 50 GB   |
+| TB-Kali01    | 2   | 2 GB | 40 GB   |
 
 ---
 
@@ -71,6 +73,7 @@ This environment is designed for:
 | Machine Name | IP Address   |
 |--------------|--------------|
 | CT-DC01      | 192.168.1.10 |
+| CT-SVR01     | 192.168.1.15 |
 | CT-CL01      | 192.168.1.20 |
 | TB-Kali01    | 192.168.1.30 |
 
@@ -102,8 +105,8 @@ This environment is designed for:
 
 - VirtualBox or VMware installed  
 - ISO images downloaded (Windows Server, Windows 10/11, Kali Linux)  
-- Minimum 16 GB RAM on host machine  
-- At least 150 GB free storage  
+- Minimum 16–24 GB RAM on host machine    
+- At least 200 GB free storage   
 
 
 ---
@@ -113,15 +116,17 @@ This environment is designed for:
 - [ ] Resources allocated (CPU, RAM, Storage)  
 - [ ] Network adapter configured  
 - [ ] IP addresses assigned  
-- [ ] All machines connected to the same network  
+- [ ] All machines connected to the same isolated network  
+- [ ] CT-SVR01 joined to the domain   
 
 ---
 
 ## 🎓 Learning Objectives
 
-- Understand how to deploy and configure a multi‑machine virtual environment  
+- Understand how to deploy and configure a multi-machine virtual environment  
 - Practice assigning and managing static IP addresses  
-- Build familiarity with Windows Server and Linux installation  
+- Build familiarity with Windows Server, Windows client, and Linux installation  
+- Understand the role of a domain controller, member server, client, and attacker system  
 - Strengthen foundational networking and system administration skills  
 
 ---
@@ -133,6 +138,7 @@ This environment is designed for:
 - Windows Server and Linux installation  
 - Host-only / internal network configuration  
 - Multi-machine environment orchestration  
+- Basic domain and member server architecture understanding   
 
 
 ---
@@ -143,7 +149,8 @@ This lab demonstrates foundational system administration and networking skills:
 - Virtual machine deployment and configuration  
 - Resource allocation and system planning  
 - Basic network configuration and segmentation  
-- Multi-system environment setup
+- Multi-system environment setup  
+- Enterprise-style architecture using a domain controller, member server, client, and attacker machine  
 
 ---
 
@@ -151,8 +158,10 @@ This lab demonstrates foundational system administration and networking skills:
 
 With the environment deployed, the next labs will cover:
 - Active Directory installation and configuration  
+- Domain joining CT-SVR01 and CT-CL01  
 - DNS setup and security  
 - Attack path enumeration using Kali Linux  
 - System hardening and defensive controls  
+- Member server misconfiguration and lateral movement scenarios  
 
 
