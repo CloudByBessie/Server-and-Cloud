@@ -21,6 +21,7 @@ This lab simulates a scenario where an attacker has gained network access and is
 
 ### Target Assets:
 - Domain Controller (CT-DC01)
+- Member Server (CT-SVR01)
 - Domain user credentials
 - Client workstation (CT-CL01)
 
@@ -57,15 +58,24 @@ The client machine exists to:
 - Simulate a real user endpoint
 - Serve as an entry point for lateral movement scenarios
 
+### 🔹 Member Server (CT-SVR01)
+A dedicated member server was added to:
+- Simulate real enterprise infrastructure (file server, application host, etc.)
+- Introduce additional attack paths beyond the client
+- Enable lateral movement and service-based exploitation scenarios
+
 ---
 
 ## 🖼️ Network Diagram
 
 <p align="center">
   
-<img width="400" alt="Virtual network diagram with devices" src="https://github.com/user-attachments/assets/ffe2c5f6-23f7-4c94-a595-387a2214d126" />
+<img width="600"  alt="Cybersecurity lab network diagram" src="https://github.com/user-attachments/assets/b0c1d6d5-8911-4e0c-8fd5-88c4dbf384c5" />
+
 
 </p>
+
+<em>Figure: Four-node lab environment including domain controller, member server, client workstation, and attacker system.</em>
 
 ---
 
@@ -74,9 +84,9 @@ The client machine exists to:
 | Component     | Hostname   | Role                      | IP Address     | Operating System        |
 |--------------|-----------|---------------------------|----------------|------------------------|
 | Domain Ctrl  | CT-DC01   | Active Directory + DNS    | 192.168.1.10   | Windows Server         |
+| Member Server| CT-SVR01  | Domain-Joined Server      | 192.168.1.15   | Windows Server         |
 | Client       | CT-CL01   | Domain-Joined Workstation | 192.168.1.20   | Windows 10/11          |
 | Attacker     | TB-Kali01 | Red Team / Offensive Ops  | 192.168.1.30   | Kali Linux             |
-
 ---
 
 ## 🛡️ CT-DC01 — Domain Controller (Blue Team Core)
@@ -88,6 +98,26 @@ The client machine exists to:
 - DNS Server (Port 53)
 - Kerberos Authentication (Port 88 — Ticket Granting System)
 - LDAP Directory Services (Port 389)
+
+## 🖥️ CT-SVR01 — Member Server
+
+**Role:** Domain-joined infrastructure server
+
+### 🔧 Typical Use Cases
+- File server (SMB shares)
+- Application hosting
+- Service account usage
+
+### 🎯 Purpose in Lab
+- Provides an additional target beyond the client
+- Enables more realistic lateral movement scenarios
+- Simulates common enterprise server roles
+
+### ⚠️ Security Considerations
+Member servers are often:
+- Trusted by the domain but less hardened than DCs
+- Running services with elevated privileges
+- A key pivot point for attackers moving toward the Domain Controller
 
 ### 🔍 Protocol Breakdown
 
@@ -217,8 +247,9 @@ This lab is intentionally isolated to:
    - Password spraying
    - Credential dumping
 5. Gains access to:
-   - Client machine
-   - Potentially Domain Controller
+   - Client machine (CT-CL01)
+   - Member server (CT-SVR01)
+   - Potentially Domain Controller (CT-DC01)
 ---
 
 ## 🧪 Example Attack Scenario
@@ -228,8 +259,9 @@ This lab is intentionally isolated to:
 3. Executes password spraying attack against discovered accounts
 4. Gains access to CT-CL01
 5. Dumps credentials using Mimikatz
-6. Moves laterally toward CT-DC01
-
+6. Moves laterally to CT-SVR01 via SMB
+7. Identifies service accounts or misconfigurations
+8. Escalates privileges and targets CT-DC01
 ---
 
 ## 🔍 Detection Opportunities
@@ -292,6 +324,8 @@ To increase realism and complexity, future iterations of this lab may include:
 - SIEM integration for log analysis
 - Endpoint detection and response (EDR) simulation
 - Privileged access management scenarios
+- Service account abuse scenarios (Kerberoasting)
+- Member server misconfiguration exploitation
 
 ---
 
