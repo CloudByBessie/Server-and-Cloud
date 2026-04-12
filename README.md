@@ -1,12 +1,18 @@
-<p align="center"> <img width="700" height="1024" alt="image" src="https://github.com/user-attachments/assets/5f6c83df-5b83-4d29-9fbd-5ffedfba1fce" /> </p>
+<p align="center"> <img width="700" height="1024" alt="Cybersecurity portfolio in a digital world" src="https://github.com/user-attachments/assets/aa380a88-24a7-49c1-9140-692f162774a2" />
+
+</p>
 
 
 
 
-<h1 align="center">☁️ Server & Cloud — A Journey Through Modern Infrastructure</h1>
+<h1 align="center"> ☁️ Server & Cloud Security Portfolio </h1>
 
 <p align="center">
-  <em>Where learning takes flight — from airport‑style fundamentals to full cyber battleground simulations.</em>
+  <em> Active Directory • Identity Security • Cloud Infrastructure </em>
+</p>
+
+<p align="center">
+⚔️ Red Team | 🛡️ Blue Team | 🧠 Real-World Scenarios
 </p>
 
 <p align="center">
@@ -37,41 +43,54 @@ Together, they create a complete learning journey from fundamentals to real‑wo
 ---
 
 
-# 📘 What This Repository Is
+# 🧠 About This Portfolio
 
-This is a **living portfolio** documenting my hands‑on experience in:
+This is a **hands-on cybersecurity and infrastructure portfolio** focused on:
 
-- Server administration  
-- Cloud fundamentals  
-- Identity & access management  
-- Networking  
-- Security engineering  
-- Adversarial thinking  
+- 🔐 Active Directory & Identity Security  
+- 🌐 Network Architecture & Troubleshooting  
+- ☁️ Cloud & Server Administration  
+- ⚔️ Offensive Security Techniques  
+- 🛡️ Defensive Engineering & Hardening  
 
-Instead of focusing only on polished outcomes, this repo highlights the **process** — the decisions, troubleshooting, and lessons that shape real engineers.
+Each project reflects **real-world attack paths, misconfigurations, and remediation strategies** used in enterprise environments.
 
 ---
 # 🧭 Repository Structure
 
 <img width="534" height="269" alt="image" src="https://github.com/user-attachments/assets/78e3eaec-f3c0-473f-9a70-cf6ccc8f4429" />
 
+---
+
+# 📖 Incident Case Studies
+
+> Real-world inspired security incidents analyzed from both attacker and defender perspectives.
+
+| Case # | Title | Description |
+|--------|------|------------|
+| **Case-001** | *The Domain That Couldn’t Find Itself* | DNS + AD misconfiguration caused identity failure across the environment |
+| **Case-002** | *The Server That Whispered Secrets* | SMB exposure leaked a privileged service account enabling lateral movement |
+
+👉 Explore all cases:  
+https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs
+
 
 ---
 
-# 🧪 Featured Labs — CloudTech vs Thunderbyte
+# 🧪 Labs — CloudTech vs Thunderbyte
 
-A cinematic, Red Team vs Blue Team simulation exploring how systems are:
+A simulated enterprise environment where identity systems are:
 
-- Built  
-- Broken  
-- Secured  
+- Built (CloudTech 🛡️)  
+- Attacked (Thunderbyte ⚡)  
+- Investigated through real-world techniques  
+- Secured using defensive engineering strategies  
 
 ### ⚔️ Current Labs
 - **Basic Lab Setup** — Multi-machine environment  
 - **Network Diagram** — Visual architecture  
 - **Active Directory Lab** *(In Progress)*  
-- **DNS Misconfiguration Lab** *(Coming Soon)*  
-- **Offensive Security Lab** *(Planned)*  
+ 
 
 👉 Explore the full lab universe here:  
 **https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs**
@@ -79,108 +98,91 @@ A cinematic, Red Team vs Blue Team simulation exploring how systems are:
 ---
 
 
+# 🛡️ Defense Playbooks
 
-# 📚 Lessons Learned — Airport Edition
+> Turning attacks into repeatable defensive strategies.
 
-This branch uses aviation metaphors to explain core concepts in a way that’s:
-
-- Memorable  
-- Visual  
-- Beginner-friendly  
-- Cloud-aligned  
-
-Topics include:
-
-- Active Directory as an airport identity system  
-- DNS as air traffic control  
-- Group Policy as flight rules  
-- Network segmentation as terminal zoning  
-- Troubleshooting logs as black boxes  
-
-👉 Explore the lessons here:  
-**[https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn](https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn%20)**
+- 🔐 Securing Active Directory from privilege escalation  
+- 📂 Hardening SMB shares & service accounts  
+- 🧭 Detecting Kerberos abuse  
+- 🧱 Identifying rogue Group Policy Objects  
 
 ---
 
-# 🛠️ Skills Demonstrated
-
-This repository showcases hands-on experience with:
-
-- Windows Server administration  
-- Active Directory fundamentals  
-- DNS configuration & troubleshooting  
-- Virtualization (VirtualBox / VMware)  
-- Network design & IP addressing  
-- Identity & access management  
-- Linux (Kali) for offensive testing  
-- Documentation & diagramming  
-- Security-first thinking  
-
----
-
-# 🔧 Technologies Used
-
-- Windows Server 2019/2022  
-- Windows 10/11  
-- Kali Linux  
-- VirtualBox / VMware  
-- PowerShell  
-- Wireshark  
-- Nmap  
 
 
+# 🧠 Lets-Learn — Airport Edition
 
+> Enterprise concepts explained through aviation analogies ✈️
+
+- Active Directory → Identity Control Tower  
+- DNS → Air Traffic Control  
+- Group Policy → Flight Rules  
+- Logs → Black Box Recorders  
+
+👉 https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn
 
 ---
 
-## 👋 About This Repository
+# 🏆 Core Skills Demonstrated
 
-This repository serves as a living portfolio of my learning and growth in server and cloud technologies.  
-Rather than focusing only on final outcomes, it highlights the process, problem-solving, and hands-on experience behind real-world systems administration.
+- Active Directory Troubleshooting  
+- Identity & Access Attack Paths  
+- Network Analysis & Debugging  
+- Incident Investigation  
+- Misconfiguration Exploitation  
+- Security Hardening
+  
+---
 
-All content here reflects my commitment to learning in public and building practical, transferable skills.
+# 🧰 Tools & Technologies
+
+- Active Directory (Domain Services, GPO, DNS)  
+- Kali Linux (Offensive Testing)  
+- Nmap (Network Reconnaissance)  
+- Wireshark (Packet Analysis)  
+- PowerShell (Automation & Administration)  
+- VirtualBox / VMware (Lab Environments)   
 
 ---
 
-## 🔧 What You’ll Find Here
+# 🧭 Learning Roadmap
 
-This repository includes:
+🟢 **Foundations**
+- Active Directory  
+- DNS  
+- Networking  
 
-- ☁️ Cloud administration labs  
-- 🖥️ Server configuration and management  
-- 🔐 Security and identity fundamentals  
-- 📘 Clear documentation and notes  
-- 🧪 Hands-on labs inspired by real-world scenarios  
+🟡 **Intermediate**
+- Kerberos Authentication  
+- Privilege Escalation  
+- Lateral Movement  
 
-Each section represents progress toward becoming a well-rounded cloud and server administrator.
+🔴 **Advanced**
+- AD CS Abuse  
+- Identity Attacks  
+- Detection Engineering  
 
 ---
 
-# 🎯 Purpose of This Repository
+# 🎯 Purpose
 
-This project exists to:
+This repository exists to:
 
 - Demonstrate real, hands-on technical ability  
-- Build a strong foundation in server, cloud, and security engineering  
-- Document learning in a clear, professional, and cinematic way  
-- Show both attacker and defender perspectives  
-- Create a cohesive, branded portfolio that stands out  
-
-If you're a recruiter, mentor, or fellow learner — welcome aboard.
+- Simulate enterprise-level security scenarios  
+- Show both attacker and defender thinking  
+- Build a portfolio that reflects real engineering work  
 
 ---
-
 
 # 🚧 Work in Progress
 
-This repository is actively maintained and continuously evolving.  
-As my skills grow, so will the depth and complexity of the labs, diagrams, and documentation.
+This environment is continuously evolving as new attack techniques, defenses, and scenarios are developed.
 
+> Building real-world security skills — one incident at a time.
 ---
 
-
-
----
 
 ## 📌 License
 
