@@ -9,8 +9,9 @@ A quick-access index of all CloudTech vs Thunderbyte encounters:
 
 | Case # | Title | Description |
 |--------|--------|-------------|
-| **[Case‑001](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md)**| *The Domain That Couldn’t Find Itself* | A misconfigured DNS + AD environment spirals into chaos until CloudTech restores order. |
-| **Case‑002** | *Coming Soon* | The battle continues! |
+| **[Case-001](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md)** | *The Domain That Couldn’t Find Itself* | A misconfigured DNS + AD environment spirals into chaos until CloudTech restores order. |
+| **[Case-002](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md)** | *The Server That Whispered Secrets* | An SMB misconfiguration exposed sensitive deployment files and a service account with elevated privileges, creating a clear path for lateral movement. |
+| **Case-003** | *Coming Soon* | Reserved for next advanced scenario |
 
 ### 🧱 Tech Focus
 
