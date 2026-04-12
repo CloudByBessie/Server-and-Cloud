@@ -52,7 +52,8 @@ This is a **full‑spectrum security engineering project**, not a basic lab.
 - Vulnerability identification and remediation  
 - Log analysis and detection fundamentals  
 - PowerShell for security testing and automation  
-- Network architecture understanding (DC, clients, attacker nodes)  
+- Network architecture understanding (DC, clients, attacker nodes)
+- Securing and managing member servers in a domain environment   
 
 ## ⚡ Thunderbyte — Attacker Skills
 - Network enumeration and reconnaissance  
@@ -80,6 +81,7 @@ This is a **full‑spectrum security engineering project**, not a basic lab.
 - BloodHound / SharpHound (attack path mapping)
 - VirtualBox / VMware / Hyper-V (lab virtualization)
 - Network diagramming tools (draw.io, Excalidraw)
+- Windows Server (Member Server role – CT-SVR01)
 
 
 ---
@@ -184,9 +186,12 @@ This mirrors real‑world security engineering and adversarial operations.
 
 This project uses a controlled, multi‑machine environment:
 
-- 🖥️ **CT‑DC01** — Domain Controller (Active Directory)  
+- 🖥️ **CT‑DC01** — Domain Controller (Active Directory)
+- 🖥️ **CT-SVR01** — Member Server (Application / Infrastructure Services)  
 - 💻 **CT‑CL01** — Domain Client  
 - 🐉 **Kali Linux (Thunderbyte)** — Attacker machine  
+
+CT-SVR01 adds a realistic server component to support scenarios like lateral movement, service abuse, and privilege escalation.
 
 ---
 
