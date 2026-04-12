@@ -100,12 +100,28 @@ A simulated enterprise environment where identity systems are:
 
 # 🛡️ Defense Playbooks
 
-> Turning attacks into repeatable defensive strategies.
+> Turning attacks into repeatable, real-world defensive strategies.
 
-- 🔐 Securing Active Directory from privilege escalation  
-- 📂 Hardening SMB shares & service accounts  
-- 🧭 Detecting Kerberos abuse  
-- 🧱 Identifying rogue Group Policy Objects  
+In this section, each playbook breaks down:
+
+- 🔍 Detection techniques  
+- 🚨 Indicators of compromise  
+- 🛠️ Step-by-step remediation  
+- 🔐 Hardening recommendations  
+
+---
+
+### 📘 Featured Topics
+
+- Active Directory Privilege Escalation Defense  
+- SMB Share Hardening  
+- Kerberos Abuse Detection  
+- Rogue GPO Identification  
+
+---
+
+👉 **Dive into the playbooks:**  
+🔗 https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Defense-Playbooks
 
 ---
 
