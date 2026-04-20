@@ -16,12 +16,18 @@
   <img src="https://img.shields.io/badge/Nmap-Network%20Scanning-004F8C?logo=nmap&logoColor=white" />
 </p>
 
-<p align="center"> <img width="700" alt="Server_and_Cloud" src="https://github.com/user-attachments/assets/63105ec5-297a-4363-8f33-c82f83c8fabe" />
+
+<p align="center">
+<img width="700"  alt="ServerCloudSecurityPortfolio" src="https://github.com/user-attachments/assets/b1f9acba-be41-47bc-a1ec-93e410733e61" />
+</p>
 
 
 </p>
 
 ---
+
+  
+<div align="center">
 
 ## ✈️ Welcome Aboard
 
@@ -35,6 +41,9 @@ This portfolio turns complex security architecture into a flight plan you can vi
 Each lab connects the dots between **Active Directory**, **network defense**, and **cloud infrastructure** through aviation‑inspired analogies — while the hands‑on simulations dive into the **CloudTech vs Thunderbyte** saga.  
 
 Together, they form a complete learning journey — from fundamentals to real‑world attack and defense — where every takeoff, landing, and turbulence teaches resilience in the cloud.
+
+</div>
+
 
 ---
 
