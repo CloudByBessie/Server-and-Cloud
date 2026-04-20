@@ -6,6 +6,16 @@
 
 ---
 
+## 🧭 Visual Attack Flow — How Attackers Move Through the Airport
+
+<p align="center">
+<img width="800" alt="Active Directory Security" src="https://github.com/user-attachments/assets/7a198a59-8a19-4b3e-8505-0229aa808653" />
+</p>
+
+💡 This diagram visualizes how attackers move from initial access to full domain compromise by chaining together privilege escalation, credential theft, and lateral movement techniques.
+
+---
+
 <p align="center"><strong>🔎 Navigate this guide like a real security playbook</strong></p>
 
 ### 🔐 Core Concepts
@@ -31,15 +41,8 @@
 - [How It All Connects](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-how-it-all-connects)  
 - [Quick Reference Cheat Sheet](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Lets-Learn%20/Active%20Directory%20Security.md#-quick-reference-cheat-sheet)  
 
----
 
-## 🧭 Visual Attack Flow — How Attackers Move Through the Airport
 
-<p align="center">
-<img width="800" height="1024" alt="Active Directory Security" src="https://github.com/user-attachments/assets/7a198a59-8a19-4b3e-8505-0229aa808653" />
-</p>
-
-💡 This diagram visualizes how attackers move from initial access to full domain compromise by chaining together privilege escalation, credential theft, and lateral movement techniques.
 
 ---
 ## 📘 Executive Summary
