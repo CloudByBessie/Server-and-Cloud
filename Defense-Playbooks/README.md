@@ -1,7 +1,7 @@
 <h1 align="center">🛡️ Defense Playbooks</h1>
 
 <p align="center">
-<img width="700" height="1024" alt="Cybersecurity defense playbook with shield icons" src="https://github.com/user-attachments/assets/053a360e-c3fd-48b5-b3a5-f1db78bb34b3" />
+<img width="700" alt="Cybersecurity defense playbook with shield icons" src="https://github.com/user-attachments/assets/053a360e-c3fd-48b5-b3a5-f1db78bb34b3" />
 </p>
 
 <p align="center">
