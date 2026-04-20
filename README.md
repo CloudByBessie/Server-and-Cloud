@@ -1,4 +1,5 @@
-<p align="center"> <img width="700" height="1024" alt="Cybersecurity portfolio in a digital world" src="https://github.com/user-attachments/assets/aa380a88-24a7-49c1-9140-692f162774a2" />
+<p align="center"> <img width="700" alt="Server_and_Cloud" src="https://github.com/user-attachments/assets/63105ec5-297a-4363-8f33-c82f83c8fabe" />
+
 
 </p>
 
