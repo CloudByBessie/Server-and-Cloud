@@ -52,12 +52,6 @@ This portfolio is a **hands‑on showcase of real security engineering**, built 
 
 Each lab mirrors **real‑world attack chains and defensive responses**, revealing how small misconfigurations become major vulnerabilities — and how to fix them with clarity and precision.
 
-
----
-# 🧭 Repository Structure
-
-<img width="534" height="269" alt="image" src="https://github.com/user-attachments/assets/78e3eaec-f3c0-473f-9a70-cf6ccc8f4429" />
-
 ---
 
 # 📖 Incident Case Studies
