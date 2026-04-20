@@ -5,8 +5,9 @@
 </p>
 
 ---
-
+<p align="center">
 ## 🧭 Visual Attack Flow — How Attackers Move Through the Airport
+</p>
 
 <p align="center">
 <img width="800" alt="Active Directory Security" src="https://github.com/user-attachments/assets/7a198a59-8a19-4b3e-8505-0229aa808653" />
