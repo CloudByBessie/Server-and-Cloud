@@ -178,12 +178,6 @@ Each playbook breaks down the full defender workflow:
 - Wireshark (packet analysis)  
 - PowerShell (automation, administration, detection scripts)  
 - Linux CLI tools (grep, less, tcpdump, netplan, systemctl)
-
-### ☁️ Cloud & Hybrid (if applicable)
-- Azure AD / Entra ID (optional if you plan to add hybrid identity)  
-- Azure VMs / Storage / Networking (optional future expansion)
-
-
 ---
 
 ## 🧭 Learning Roadmap — Flight Deck Matrix
