@@ -1,19 +1,8 @@
-<p align="center"> <img width="700" alt="Server_and_Cloud" src="https://github.com/user-attachments/assets/63105ec5-297a-4363-8f33-c82f83c8fabe" />
-
-
-</p>
-
-
-
-
-<h1 align="center"> ☁️ Server & Cloud Security Portfolio </h1>
+<h1 align="center"> ⚡ Server & Cloud Security Portfolio </h1>
 
 <p align="center">
-  <em> Active Directory • Identity Security • Cloud Infrastructure </em>
-</p>
-
-<p align="center">
-⚔️ Red Team | 🛡️ Blue Team | 🧠 Real-World Scenarios
+  <em> Active Directory • Identity Security • Cloud Infrastructure </em><br>
+  <strong>Red Team ⚔️ | Blue Team 🛡️ | Real‑World Scenarios 🧠</strong>
 </p>
 
 <p align="center">
@@ -27,34 +16,42 @@
   <img src="https://img.shields.io/badge/Nmap-Network%20Scanning-004F8C?logo=nmap&logoColor=white" />
 </p>
 
----
+<p align="center"> <img width="700" alt="Server_and_Cloud" src="https://github.com/user-attachments/assets/63105ec5-297a-4363-8f33-c82f83c8fabe" />
 
-#  ✈️ Welcome Aboard
 
-Every system is like an airport.
-
-Identity is your boarding pass.  
-DNS is your air traffic control.  
-Servers are your terminals.  
-Policies are your flight rules.  
-
-This repository uses aviation‑inspired analogies to make complex concepts intuitive — while the hands‑on labs dive deeper into the **CloudTech vs Thunderbyte** security simulation.  
-Together, they create a complete learning journey from fundamentals to real‑world attack and defense.
+</p>
 
 ---
 
+## ✈️ Welcome Aboard
 
-# 🧠 About This Portfolio
+Every system is an airport in motion.  
+**Identity** is your boarding pass.  
+**DNS** is your air traffic control.  
+**Servers** are your terminals.  
+**Policies** are your flight rules.  
 
-This is a **hands-on cybersecurity and infrastructure portfolio** focused on:
+This portfolio turns complex security architecture into a flight plan you can visualize.  
+Each lab connects the dots between **Active Directory**, **network defense**, and **cloud infrastructure** through aviation‑inspired analogies — while the hands‑on simulations dive into the **CloudTech vs Thunderbyte** saga.  
 
-- 🔐 Active Directory & Identity Security  
-- 🌐 Network Architecture & Troubleshooting  
-- ☁️ Cloud & Server Administration  
-- ⚔️ Offensive Security Techniques  
-- 🛡️ Defensive Engineering & Hardening  
+Together, they form a complete learning journey — from fundamentals to real‑world attack and defense — where every takeoff, landing, and turbulence teaches resilience in the cloud.
 
-Each project reflects **real-world attack paths, misconfigurations, and remediation strategies** used in enterprise environments.
+---
+
+
+## 🧠 About This Portfolio
+
+This portfolio is a **hands‑on showcase of real security engineering**, built to demonstrate how modern infrastructures are designed, attacked, defended, and hardened. Every project is grounded in practical, enterprise‑grade scenarios — not theory.
+
+### What this portfolio focuses on  
+- 🔐 **Active Directory & Identity Security** — authentication, authorization, misconfigurations, and attack paths  
+- 🌐 **Network Architecture & Troubleshooting** — segmentation, routing, DNS, packet analysis  
+- ☁️ **Cloud & Server Administration** — hybrid identity, virtualization, infrastructure design  
+- ⚔️ **Offensive Security Techniques** — enumeration, exploitation, lateral movement  
+- 🛡️ **Defensive Engineering & Hardening** — detection, mitigation, remediation, and resilience  
+
+Each lab mirrors **real‑world attack chains and defensive responses**, revealing how small misconfigurations become major vulnerabilities — and how to fix them with clarity and precision.
+
 
 ---
 # 🧭 Repository Structure
@@ -72,132 +69,165 @@ Each project reflects **real-world attack paths, misconfigurations, and remediat
 | **Case-001** | *The Domain That Couldn’t Find Itself* | DNS + AD misconfiguration caused identity failure across the environment |
 | **Case-002** | *The Server That Whispered Secrets* | SMB exposure leaked a privileged service account enabling lateral movement |
 
-👉 Explore all cases:  
-https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs
+👉 **Explore all cases:**  
+🔗https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs
 
 
 ---
 
-# 🧪 Labs — CloudTech vs Thunderbyte
+## 🧪 Labs — CloudTech vs Thunderbyte
 
-A simulated enterprise environment where identity systems are:
+A fully simulated enterprise battlefield where identity, infrastructure, and security collide.
 
-- Built (CloudTech 🛡️)  
-- Attacked (Thunderbyte ⚡)  
-- Investigated through real-world techniques  
-- Secured using defensive engineering strategies  
+In this environment, systems are:
 
-### ⚔️ Current Labs
-- **Basic Lab Setup** — Multi-machine environment  
-- **Network Diagram** — Visual architecture  
-- **Active Directory Lab** *(In Progress)*  
- 
+- 🛡️ **Built and defended by CloudTech** — secure configurations, identity controls, hardened servers  
+- ⚡ **Attacked by Thunderbyte** — enumeration, exploitation, lateral movement, real adversarial tradecraft  
+- 🔍 **Investigated using real-world techniques** — log analysis, packet captures, incident reconstruction  
+- 🔧 **Secured through defensive engineering** — remediation, hardening, detection logic, Zero Trust principles  
+
+Each lab reveals how a single misconfiguration becomes an attack path — and how defenders can shut it down with clarity and precision.
 
 👉 Explore the full lab universe here:  
-**https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs**
+🔗**https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Labs**
 
 ---
 
 
-# 🛡️ Defense Playbooks
+## 🛡️ Defense Playbooks
 
-> Turning attacks into repeatable, real-world defensive strategies.
+> Turning real attacks into repeatable, enterprise‑grade defensive strategies.
 
-In this section, each playbook breaks down:
+Each playbook breaks down the full defender workflow:
 
-- 🔍 Detection techniques  
-- 🚨 Indicators of compromise  
-- 🛠️ Step-by-step remediation  
-- 🔐 Hardening recommendations  
+- 🔍 **Detection techniques** — what to monitor, where to look, and how to validate  
+- 🚨 **Indicators of compromise** — behavioral, log‑based, and network‑level signals  
+- 🛠️ **Step‑by‑step remediation** — containment, eradication, and recovery actions  
+- 🔐 **Hardening recommendations** — long‑term fixes, policy updates, and prevention  
 
 ---
 
 ### 📘 Featured Topics
 
-- Active Directory Privilege Escalation Defense  
-- SMB Share Hardening  
-- Kerberos Abuse Detection  
-- Rogue GPO Identification  
+- **Active Directory Privilege Escalation Defense**  
+- **SMB Share Hardening & Access Control**  
+- **Kerberos Abuse Detection & Mitigation**  
+- **Rogue GPO Identification & Cleanup**  
 
----
-
-👉 **Dive into the playbooks:**  
+👉 **Explore the full playbooks:**  
 🔗 https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Defense-Playbooks
 
----
-
-
-
-# 🧠 Lets-Learn — Airport Edition
-
-> Enterprise concepts explained through aviation analogies ✈️
-
-- Active Directory → Identity Control Tower  
-- DNS → Air Traffic Control  
-- Group Policy → Flight Rules  
-- Logs → Black Box Recorders  
-
-👉 https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn
 
 ---
 
-# 🏆 Core Skills Demonstrated
 
-- Active Directory Troubleshooting  
-- Identity & Access Attack Paths  
-- Network Analysis & Debugging  
-- Incident Investigation  
-- Misconfiguration Exploitation  
-- Security Hardening
+## 🧠 Lets‑Learn — Airport Edition
+
+> Enterprise security concepts explained through aviation — because every system has a runway, a tower, and a flight plan. ✈️
+
+- **Active Directory → Identity Control Tower**  
+  Directs who can take off, land, or even enter the airport.
+
+- **DNS → Air Traffic Control**  
+  Ensures every request reaches the correct destination without collisions.
+
+- **Group Policy → Flight Rules**  
+  Governs how every “aircraft” (system/user) must operate.
+
+- **Logs → Black Box Recorders**  
+  Capture every event so incidents can be reconstructed with precision.
+
+👉 **Explore the full series:**  
+🔗https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Lets-Learn
+
+
+---
+
+## 🏆 Core Skills Demonstrated
+
+| Category | Skills |
+|---------|--------|
+| **Identity & Directory Services** | Active Directory troubleshooting, authentication flow analysis, privilege escalation paths |
+| **Network & Infrastructure** | Packet analysis, routing/debugging, segmentation validation, DNS investigation |
+| **Offensive Security** | Enumeration, misconfiguration exploitation, lateral movement techniques |
+| **Defensive Engineering** | Hardening, remediation, detection logic, Zero Trust alignment |
+| **Incident Response** | Log analysis, timeline reconstruction, IOC identification, threat investigation |
+
   
 ---
 
-# 🧰 Tools & Technologies
+## 🧰 Tools & Technologies
 
-- Active Directory (Domain Services, GPO, DNS)  
-- Kali Linux (Offensive Testing)  
-- Nmap (Network Reconnaissance)  
-- Wireshark (Packet Analysis)  
-- PowerShell (Automation & Administration)  
-- VirtualBox / VMware (Lab Environments)   
+### 🔐 Identity & Directory Services
+- Active Directory Domain Services (AD DS)  
+- Group Policy Management  
+- DNS (Windows-integrated)  
 
----
+### 🌐 Network & Infrastructure
+- **pfSense Firewall** (routing, NAT, VLANs, IDS/IPS, traffic shaping)  
+- VirtualBox & VMware Workstation (virtualization)  
+- Multi‑tier segmented networks (LAN_NET, SERVER_NET, APP_TIER, DATA_TIER, ATTACK_NET)
 
-# 🧭 Learning Roadmap
+### 🛡️ Security Monitoring & Detection
+- **Splunk Enterprise** (SIEM, log ingestion, dashboards, detections)  
+- Sysmon (endpoint telemetry)  
+- Windows Event Logging  
+- Packet captures (PCAP)  
 
-🟢 **Foundations**
-- Active Directory  
-- DNS  
-- Networking  
+### ⚔️ Offensive Security
+- Kali Linux (attack platform)  
+- Nmap (network reconnaissance)  
+- Responder / Impacket (identity attacks)  
+- BloodHound / SharpHound (AD attack path mapping)
 
-🟡 **Intermediate**
-- Kerberos Authentication  
-- Privilege Escalation  
-- Lateral Movement  
+### 🧰 Analysis & Administration
+- Wireshark (packet analysis)  
+- PowerShell (automation, administration, detection scripts)  
+- Linux CLI tools (grep, less, tcpdump, netplan, systemctl)
 
-🔴 **Advanced**
-- AD CS Abuse  
-- Identity Attacks  
-- Detection Engineering  
+### ☁️ Cloud & Hybrid (if applicable)
+- Azure AD / Entra ID (optional if you plan to add hybrid identity)  
+- Azure VMs / Storage / Networking (optional future expansion)
 
----
-
-# 🎯 Purpose
-
-This repository exists to:
-
-- Demonstrate real, hands-on technical ability  
-- Simulate enterprise-level security scenarios  
-- Show both attacker and defender thinking  
-- Build a portfolio that reflects real engineering work  
 
 ---
 
-# 🚧 Work in Progress
+## 🧭 Learning Roadmap — Flight Deck Matrix
 
-This environment is continuously evolving as new attack techniques, defenses, and scenarios are developed.
+| Flight Phase | Skills Learned | What It Represents |
+|--------------|----------------|--------------------|
+| 🟢 **Pre‑Flight (Foundations)** | Active Directory basics | Passenger identity & boarding control |
+|  | DNS & name resolution | Air‑traffic control routing every request |
+|  | Core networking & segmentation | Airport layout, runways, and taxiways |
+| 🟡 **In‑Flight Operations (Intermediate)** | Kerberos authentication | Secure flight clearance & ticket validation |
+|  | Privilege escalation routes | Unauthorized cockpit access attempts |
+|  | Lateral movement corridors | Moving between terminals undetected |
+|  | Log analysis & black‑box review | Investigating turbulence & incidents |
+| 🔴 **Advanced Maneuvers (Expert)** | AD CS abuse | Compromising the airport’s master keys |
+|  | Identity attack chains | Hijacking flights & forging credentials |
+|  | Detection engineering | Radar systems identifying hostile aircraft |
+|  | Zero Trust hardening | Strict flight rules & controlled airspace |
 
-> Building real-world security skills — one incident at a time.
+
+---
+
+## 🎯 Purpose
+
+This repository is designed to:
+
+- **Demonstrate real, hands‑on technical ability** across identity, networking, offensive security, and defensive engineering  
+- **Simulate enterprise‑level security scenarios** that mirror how modern organizations are attacked and defended  
+- **Show both attacker and defender thinking** through the CloudTech vs Thunderbyte lab series  
+- **Build a portfolio that reflects true engineering work**, not theory — showcasing how systems break, how attacks unfold, and how to secure them with precision
+ 
+
+---
+## 🚧 Work in Progress
+
+This environment is continuously evolving as new attack techniques, defenses, and enterprise scenarios are added.
+
+> Building real‑world security skills — one incident at a time.
+
 ---
 
 
