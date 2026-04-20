@@ -1,7 +1,7 @@
 # 🧠 Active Directory Lesson Learned  
 ## ✈️ Understanding Active Directory with an Airport Analogy
 
-<img width="800" height="533" alt="image" src="https://github.com/user-attachments/assets/1a0d08b6-0bae-4825-81e8-5bc6c3a66024" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/1a0d08b6-0bae-4825-81e8-5bc6c3a66024" />
 
 ---
 
