@@ -1,11 +1,11 @@
-<h1 align="center">🧪 Labs — Cloud Tech vs Thunderbyte</h1>
+<h1 align="center">⚔️ Labs — Cloud Tech vs Thunderbyte</h1>
 
 <p align="center">
-  <em>A simulated battle between attackers and defenders in modern infrastructure</em>
+  <em>A cinematic simulation of attackers and defenders in modern enterprise infrastructure</em>
 </p>
 
 <p align="center">
-  <strong>Red Team vs Blue Team Simulation</strong>
+  <strong>Red Team vs Blue Team • Full‑Spectrum Security Engineering</strong>
 </p>
 
 <p align="center">
@@ -15,101 +15,102 @@
   <img src="https://img.shields.io/badge/Virtualization-Lab%20Environment-green" />
 </p>
 
-
 ---
 
+<div align="center">
 
-<p align="center">
+<img width="750" alt="CloudTechVSThunderbyte" src="https://github.com/user-attachments/assets/d228d718-cb3e-43ff-9893-059fcf3a57fa" />
+
+  
 <strong>Welcome to the battlefield.</strong><br>
-<br>
-This is not just a collection of labs—<br>
-This is a simulated cyber war between two forces:
-</p>
+This is not a simple lab collection — it’s a cinematic cyber war between two engineered forces.
+</div>
 
 ---
 
 # 🔍 Recruiter Summary
 
-This lab series demonstrates the ability to **build, secure, attack, and analyze** enterprise‑grade environments.  
-It highlights practical experience across identity security, system hardening, misconfiguration analysis, and adversarial techniques used in real organizations.
+This project demonstrates the ability to **design, secure, attack, and analyze** enterprise‑grade environments.  
+It showcases hands‑on experience across **identity security, network segmentation, system hardening, and adversarial operations** — all mapped to real organizational challenges.
 
-You will see:
-- How modern infrastructures are designed  
-- How attackers exploit weaknesses  
+You’ll see:
+- How segmented architectures are built and defended  
+- How attackers exploit misconfigurations and weak IAM  
 - How defenders detect, mitigate, and remediate threats  
-- How findings are documented clearly and professionally  
+- How findings are documented with clarity and precision  
 
-This is a **full‑spectrum security engineering project**, not a basic lab.
+This is a **portfolio‑grade security engineering simulation**, not a classroom exercise.
+
+---
+
+# 🧠 Architecture Overview
+
+The lab environment mirrors a real enterprise network — segmented, logged, and fortified.
+
+## Core Components
+
+| **Machine** | **Role** | **Function in the Environment** |
+|------------|----------|---------------------------------|
+| **CT‑FW01 (pfSense)** | Firewall / Segmentation Gateway | Enforces network boundaries, routes traffic between all subnets, collects logs, and acts as the choke point for both attacker ingress and defender monitoring. |
+| **CT‑DC01** | Primary Domain Controller | Hosts Active Directory, authentication, Group Policy, and identity‑first security controls. Central to Blue Team defense. |
+| **CT‑DC02** | Secondary Domain Controller | Provides AD redundancy, load balancing, and resilience. Ensures authentication continuity during attacks or outages. |
+| **CT‑CL01** | Domain‑Joined Client | Represents a real enterprise workstation. Used for user‑level testing, GPO validation, and simulating lateral movement paths. |
+| **CT‑FS01** | File Server | Stores shared resources, SMB shares, and sensitive data. A common attacker target for credential harvesting and privilege escalation. |
+| **CT‑WEB01** | Web Server | Hosts internal or external web applications. Used to simulate web‑layer attack surfaces and server‑side misconfigurations. |
+| **CT‑SVR01** | Application Server | Runs application services and infrastructure components. Supports scenarios like service abuse, privilege escalation, and lateral movement. |
+| **CT‑DB01** | Database Server | Stores structured data and backend information. Represents high‑value targets for attackers and critical assets for defenders. |
+| **CT‑SIEM01** | SIEM / Log Aggregation Node | Collects logs from DCs, servers, and the firewall. Enables detection engineering, correlation, and Blue Team visibility. |
+| **TB‑KALI01** | Attacker Node (Thunderbyte) | Performs reconnaissance, exploitation, lateral movement, and adversarial testing against the CloudTech environment. |
+
+
+Each segment connects through the firewall, creating a realistic **defense‑in‑depth topology** where CloudTech defends and Thunderbyte attacks.
 
 ---
 
 # 🛠️ Skills Mapping
 
 ## ☁️ Cloud Tech — Defender Skills
-- Active Directory configuration, hardening, and identity security  
-- DNS setup, troubleshooting, and secure configuration  
-- System hardening and baseline enforcement  
+- Active Directory configuration and hardening  
+- DNS setup and secure resolution  
+- System baseline enforcement  
 - Vulnerability identification and remediation  
-- Log analysis and detection fundamentals  
-- PowerShell for security testing and automation  
-- Network architecture understanding (DC, clients, attacker nodes)
-- Securing and managing member servers in a domain environment   
+- Log analysis and detection engineering  
+- PowerShell automation for security tasks  
+- Network architecture and segmentation design  
 
 ## ⚡ Thunderbyte — Attacker Skills
 - Network enumeration and reconnaissance  
 - Exploiting misconfigurations and weak IAM  
-- Lateral movement techniques  
-- Privilege escalation fundamentals  
+- Lateral movement and privilege escalation  
 - Credential harvesting and attack path discovery  
-- Offensive methodology and adversarial thinking  
+- Adversarial methodology and offensive mindset  
 
 ## 🧩 Cross‑Discipline Skills
-- Threat modeling  
-- Documentation and reporting  
-- Environment design and diagramming  
-- Understanding attacker–defender interplay  
+- Threat modeling and documentation  
+- Diagramming and environment visualization  
 - Translating technical findings into actionable insights  
+- Understanding attacker–defender interplay  
+
 ---
+
 # 🧰 Technologies Used
 
-- Windows Server 2022 (Active Directory, DNS)
+- Windows Server 2022 (AD, DNS)
 - Windows 11 Enterprise (Client)
 - Kali Linux (Offensive Security)
-- PowerShell (automation, security testing)
-- Wireshark (packet analysis)
-- Nmap (network enumeration)
-- BloodHound / SharpHound (attack path mapping)
-- VirtualBox / VMware / Hyper-V (lab virtualization)
-- Network diagramming tools (draw.io, Excalidraw)
-- Windows Server (Member Server role – CT-SVR01)
-
+- pfSense Firewall (CT‑FW01)
+- PowerShell (Automation)
+- Wireshark, Nmap, BloodHound
+- VirtualBox / VMware / Hyper‑V
+- draw.io / Excalidraw (Network Diagramming)
+- SIEM Integration (CT‑SIEM01)
 
 ---
 
-# ⚔️ The Theme — Cloud Tech vs Thunderbyte
+## ⚔️ The Theme — Cloud Tech vs Thunderbyte
+A cinematic simulation of modern security engineering —  
+where CloudTech defends the enterprise and Thunderbyte attacks its weaknesses.
 
-This repository is a hands‑on exploration of how modern infrastructures are **built, attacked, and defended**.
-
- ### ☁️ Cloud Tech  
-Defenders of modern infrastructure — securing identity, hardening systems, and eliminating misconfigurations.
-
-
-
-<p align="center">
-<img width="300"  alt="CloudTech logo with electric design" src="https://github.com/user-attachments/assets/5cf4331a-c183-4fd1-984c-fc7065b9c8a3" />
-</p>
-
-
----
-
-### ⚡ Thunderbyte
-
-Attackers who exploit weak configurations, identity flaws, and overlooked vulnerabilities.
-
-<p align="center">
-<img width="300" alt="image" src="https://github.com/user-attachments/assets/8d02764a-0a4e-4946-9297-9b1d168a3d65" />
-
-</p>
 
 ---
 
@@ -119,9 +120,9 @@ Attackers who exploit weak configurations, identity flaws, and overlooked vulner
 
 ---
 
-# 🎯 Purpose of This Lab Series
+# 🎯 Purpose
 
-These labs simulate real‑world enterprise environments and explore them from both perspectives:
+To simulate real‑world enterprise environments and explore them from both perspectives:
 
 ### ☁️ Cloud Tech (Blue Team)
 - Secure Active Directory  
@@ -136,152 +137,40 @@ These labs simulate real‑world enterprise environments and explore them from b
 - Identify weak points  
 
 ---
-# 🎯 Who This Lab Is For
-This project is designed for:
-- Security engineers evaluating hands‑on technical ability
-- Recruiters assessing practical experience
-- Teams looking for candidates who understand both attack and defense
-- Learners who want real‑world, enterprise‑style security scenarios
 
-
----
-
-
-# 🧩 What This Demonstrates About Me as an Engineer
+# 🧩 What This Demonstrates About Me
 
 - I can design and deploy enterprise‑style environments  
 - I understand identity‑first security and misconfiguration risks  
-- I can think like both an attacker and a defender  
+- I think like both an attacker and a defender  
 - I document clearly, visually, and professionally  
-- I can break down complex systems into understandable components  
-- I approach security with a balance of creativity and discipline 
+- I translate complex systems into actionable insights  
 
 ---
 
 # 🏆 Key Outcomes
-- Built a functional enterprise domain environment from scratch
-- Identified and exploited real misconfigurations
-- Hardened systems using industry best practices
-- Documented attack paths and defensive mitigations
-- Demonstrated attacker‑minded defensive engineering
-
-
----
-
-# 🧠 Why This Matters
-
-To defend effectively, you must understand how attackers think.
-
-These labs demonstrate:
-- How environments are built  
-- How they are broken  
-- How they are secured  
-
-This mirrors real‑world security engineering and adversarial operations.
-
----
-
-
-# 🧪 Lab Environment
-
-This project uses a controlled, multi‑machine environment:
-
-- 🖥️ **CT‑DC01** — Domain Controller (Active Directory)
-- 🖥️ **CT-SVR01** — Member Server (Application / Infrastructure Services)  
-- 💻 **CT‑CL01** — Domain Client  
-- 🐉 **Kali Linux (Thunderbyte)** — Attacker machine  
-
-CT-SVR01 adds a realistic server component to support scenarios like lateral movement, service abuse, and privilege escalation.
-
----
-
-
-
-# 📂 Lab Structure
-
-Each lab includes:
-- Objective  
-- Setup  
-- Step‑by‑step execution  
-- Screenshots  
-- Lessons learned  
-
----
-
-# 🗂️ How to Navigate This Repo
-
-- **/Labs/** — All hands‑on labs with steps, screenshots, and findings  
-- **/Labs/assets/** — Network diagrams, architecture visuals, and supporting images  
-- **lab-setup.md** — Full environment build guide  
-- **Upcoming labs** — AD, DNS, and offensive security modules  
-
----
-
-# 🚀 Labs
-
-- [Lab Environment Setup](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/lab-setup.md)  
-- [Network Diagram](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/assets/network-diagram.png)
-
-Upcoming:
-- Active Directory Lab *(In Progress)*  
-- DNS Lab *(Coming Soon)*  
-- Offensive Security Lab *(Planned)*  
-
----
-
-# 🛣️ Future Roadmap
-
-- Complete Active Directory Hardening Lab  
-- Build DNS Security & Misconfiguration Lab  
-- Add Offensive Security Attack Paths Lab  
-- Integrate SIEM log analysis (Splunk / Sentinel)  
-- Add PowerShell automation scripts for detection  
-- Expand environment to include Azure AD / Entra ID  
-
-
-
----
-
-# 🖼️ Screenshots Preview
-
-<p align="center">
-  
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/2e817fb0-aa27-4761-b445-b978cf76170b" />
-
-</p>
-
-<p align="center">
-
-  <img width="500" alt="image" src="https://github.com/user-attachments/assets/58063086-537e-4571-92bb-907e4a938a71" />
-
-
-</p>
+- Built a segmented enterprise domain environment from scratch  
+- Identified and exploited real misconfigurations  
+- Hardened systems using best practices  
+- Documented attack paths and defensive mitigations  
+- Demonstrated attacker‑minded defensive engineering  
 
 ---
 
 # ⚡ Final Note
 
-This is more than practice.
+This isn’t just a lab.  
+It’s a **cinematic cyber war** — a clash of light and storm, logic and chaos.  
+Every packet tells a story.  
+Every misconfiguration hides an opportunity.  
+Every defense is forged in the aftermath of an attack.  
 
-This is where:
-- Misconfigurations become attack paths  
-- Knowledge becomes skill  
-- Defense is built through understanding the offense  
-
-Welcome to the lab.
-
+**This is where engineering meets art.**  
+**This is Cloud Tech vs Thunderbyte.**
 
 ---
 
 # 📬 Connect With Me
 
-If you'd like to discuss my work, collaborate, or explore opportunities, you can reach me here:
-
-- **LinkedIn:** www.linkedin.com/in/bessie-mullins-1ba343183 
-- **GitHub:** https://github.com/CloudByBessie  
-
-
-
-
-
-
+- **LinkedIn:** [linkedin.com/in/bessie-mullins-1ba343183](https://www.linkedin.com/in/bessie-mullins-1ba343183)  
+- **GitHub:** [github.com/CloudByBessie](https://github.com/CloudByBessie)
