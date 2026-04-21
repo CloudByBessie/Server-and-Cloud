@@ -4,7 +4,8 @@
 
 
 <p align="center">
-<img width="500" height="1024" alt="Case 002 The server that whispered secrets" src="https://github.com/user-attachments/assets/b6220527-4a45-40e7-a425-ffef67f4ccab" />
+<img width="700"  alt="case002upgrade" src="https://github.com/user-attachments/assets/6d2f5292-03a9-44e0-a05d-0d5e4c358992" />
+
 </p>
 
 ---
