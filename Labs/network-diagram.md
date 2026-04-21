@@ -1,353 +1,257 @@
-# 🌐 Network Architecture — Cloud Tech vs Thunderbyte Lab
+<div align="center">
+
+# 🖧 Network Diagram — Cloud Tech vs Thunderbyte (v2.0)
+
+**A segmented enterprise lab built for identity security, adversarial simulation, and real‑world detection engineering.**
+
+</div>
 
 ---
 
 ## 📘 Overview
 
-This document provides a detailed breakdown of the network architecture used in the **Cloud Tech vs Thunderbyte cybersecurity lab**.
+This document provides a visual and structural breakdown of the **Cloud Tech vs Thunderbyte** cybersecurity lab — a fully segmented, enterprise‑style Active Directory environment designed for both offensive and defensive security workflows.
 
-The environment simulates a **real-world enterprise Active Directory network** under attack conditions, allowing for both offensive (Red Team) and defensive (Blue Team) operations.
+The architecture mirrors real organizations by incorporating:
 
----
-
-## 🎯 Threat Model
-
-This lab simulates a scenario where an attacker has gained network access and is attempting to compromise the domain.
-
-### Assumed Attacker Capabilities:
-- Network-level access to internal systems
-- Ability to scan and enumerate services
-- No initial domain credentials (pre-compromise phase)
-
-### Target Assets:
-- Domain Controller (CT-DC01)
-- Member Server (CT-SVR01)
-- Domain user credentials
-- Client workstation (CT-CL01)
-
-### Attack Goals:
-- Gain valid credentials
-- Escalate privileges to domain admin
-- Maintain persistence within the environment
+- Multi‑tier network segmentation  
+- Identity‑centric infrastructure  
+- Web, application, and data layers  
+- A dedicated attacker network  
+- A pfSense firewall enforcing strict boundaries  
 
 ---
 
-## 🏗️ Architecture Design Decisions
+## 🧰 Tech Stack
 
-This lab environment was intentionally designed to reflect a simplified enterprise network while maintaining clarity for learning and demonstration.
+This lab demonstrates hands‑on experience with a modern, enterprise‑aligned security and infrastructure stack:
 
-### 🔹 Single Domain Model
-A single Active Directory domain was used to:
-- Simplify identity management
-- Focus on core AD attack paths
-- Reduce unnecessary complexity for initial testing
+**Identity & Windows Infrastructure**
+- Windows Server (Active Directory, DNS, Kerberos, GPO)
+- Multi‑DC replication and identity redundancy
 
-### 🔹 Flat Network (192.168.1.0/24)
-A flat subnet was chosen to:
-- Allow unrestricted communication between systems
-- Simulate common small/medium business environments
-- Enable easier enumeration from an attacker perspective
+**Linux Infrastructure**
+- Ubuntu Server (Web, Application, and Database tiers)
+- Systemd services, hardening, and tier‑based access control
 
-### 🔹 Dedicated Attacker Machine
-The Kali Linux system is separated logically to:
-- Represent an external or compromised internal host
-- Perform realistic offensive security operations
+**Network & Segmentation**
+- pfSense Firewall (VLAN segmentation, NAT, rule enforcement)
+- Multi‑tier network design (LAN → Server → App → Data)
 
-### 🔹 Domain-Joined Client
-The client machine exists to:
-- Simulate a real user endpoint
-- Serve as an entry point for lateral movement scenarios
+**Security & Detection**
+- Splunk Enterprise (log aggregation, detection engineering)
+- Sysmon + Windows Event Logging
 
-### 🔹 Member Server (CT-SVR01)
-A dedicated member server was added to:
-- Simulate real enterprise infrastructure (file server, application host, etc.)
-- Introduce additional attack paths beyond the client
-- Enable lateral movement and service-based exploitation scenarios
+**Adversarial Tooling**
+- Nmap (network scanning)
+- BloodHound / SharpHound (AD enumeration)
+  
 
 ---
 
-## 🖼️ Network Diagram
+## 🖼️ Segmented Network Topology (v2.0)
 
 <p align="center">
-  
-<img width="600"  alt="Cybersecurity lab network diagram" src="https://github.com/user-attachments/assets/b0c1d6d5-8911-4e0c-8fd5-88c4dbf384c5" />
+
+<img width="750" alt="LabDiagram42026" src="https://github.com/user-attachments/assets/17100add-e543-479d-827c-6208f4464de6" />
 
 
 </p>
 
-<em>Figure: Four-node lab environment including domain controller, member server, client workstation, and attacker system.</em>
+<em>Figure: Segmented enterprise lab topology showing systems distributed across LAN_NET, SERVER_NET, APP_TIER, and DATA_TIER within an isolated internal network.</em>
 
 ---
 
+## 🧩 Network Segments
+
+| Segment | Subnet | Purpose |
+|--------|--------|---------|
+| **LAN_NET** | 172.16.10.0/24 | Identity, clients, SIEM |
+| **SERVER_NET** | 172.16.20.0/24 | Web and service hosting |
+| **APP_TIER** | 172.16.30.0/24 | Application logic layer |
+| **DATA_TIER** | 172.16.40.0/24 | Database and backend storage |
+| **ATTACK_NET** | 172.16.50.0/24 | Thunderbyte attacker network |
+| **Firewall Gateway** | 172.16.x.1 | pfSense segmentation and routing |
+
+---
 ## 🧩 Environment Summary
 
-| Component     | Hostname   | Role                      | IP Address     | Operating System        |
-|--------------|-----------|---------------------------|----------------|------------------------|
-| Domain Ctrl  | CT-DC01   | Active Directory + DNS    | 192.168.1.10   | Windows Server         |
-| Member Server| CT-SVR01  | Domain-Joined Server      | 192.168.1.15   | Windows Server         |
-| Client       | CT-CL01   | Domain-Joined Workstation | 192.168.1.20   | Windows 10/11          |
-| Attacker     | TB-Kali01 | Red Team / Offensive Ops  | 192.168.1.30   | Kali Linux             |
----
+| Component        | Hostname   | Role                               | IP Address      | Operating System |
+|-----------------|------------|------------------------------------|-----------------|------------------|
+| Primary DC      | CT‑DC01    | Active Directory + DNS             | 172.16.10.10    | Windows Server   |
+| Secondary DC    | CT‑DC02    | AD Redundancy / Failover           | 172.16.10.11    | Windows Server   |
+| Client          | CT‑CL01    | Domain‑Joined Workstation          | 172.16.10.25    | Windows 10/11    |
+| SIEM Node       | CT‑SIEM01  | Log Aggregation / Detection        | 172.16.10.50    | Ubuntu (Splunk)  |
+| Web Server      | CT‑WEB01   | Web / Service Hosting              | 172.16.20.30    | **Ubuntu Server** |
+| App Server      | CT‑SVR01   | Application Logic Tier             | 172.16.30.20    | **Ubuntu Server** |
+| Database Server | CT‑DB01    | Data Storage / Backend Services    | 172.16.40.10    | **Ubuntu Server** |
+| Attacker        | TB‑KALI01  | Red Team / Offensive Operations    | 172.16.50.10    | Kali Linux       |
+| Firewall        | CT‑FW01    | pfSense Segmentation Gateway       | 172.16.x.1      | pfSense          |
 
-## 🛡️ CT-DC01 — Domain Controller (Blue Team Core)
-
-**Role:** Central identity and authentication authority
-
-### 🔧 Services Running
-- Active Directory Domain Services (AD DS)
-- DNS Server (Port 53)
-- Kerberos Authentication (Port 88 — Ticket Granting System)
-- LDAP Directory Services (Port 389)
-
-## 🖥️ CT-SVR01 — Member Server
-
-**Role:** Domain-joined infrastructure server
-
-### 🔧 Typical Use Cases
-- File server (SMB shares)
-- Application hosting
-- Service account usage
-
-### 🎯 Purpose in Lab
-- Provides an additional target beyond the client
-- Enables more realistic lateral movement scenarios
-- Simulates common enterprise server roles
-
-### ⚠️ Security Considerations
-Member servers are often:
-- Trusted by the domain but less hardened than DCs
-- Running services with elevated privileges
-- A key pivot point for attackers moving toward the Domain Controller
-
-### 🔍 Protocol Breakdown
-
-- **DNS (Port 53)**  
-  Resolves domain names (e.g., `company.local`) to IP addresses.  
-  In an Active Directory environment, DNS is critical for locating domain controllers and services.
-
-- **Kerberos (Port 88)**  
-  Primary authentication protocol used by Active Directory.  
-  It uses ticket-based authentication to securely verify user identities without transmitting passwords over the network.
-
-- **LDAP (Port 389)**  
-  Used to query and interact with the Active Directory database.  
-  Enables systems and users to retrieve information such as user accounts, groups, and domain structure.
-
-- **AD DS (Active Directory Domain Services)**  
-  Core service that stores identity and access management data.  
-  Works in conjunction with DNS, Kerberos, and LDAP to provide centralized authentication and authorization.
-
-### 🎯 Responsibilities
-- Authenticate all domain users and machines
-- Manage Group Policy Objects (GPOs)
-- Provide DNS name resolution
-- Store and manage directory objects
-
-### 🔐 Security Importance
-The Domain Controller is the **most critical asset in the network**.
-
-If compromised:
-- Full domain takeover is possible
-- Credential dumping can expose all users
-- Attackers can create persistence mechanisms
 
 ---
 
-## 💻 CT-CL01 — Domain Client
+## 🛡️ Identity Tier — Domain Controllers (LAN_NET)
 
-**Role:** Standard enterprise workstation
+### **CT‑DC01 / CT‑DC02 — Active Directory Core**
+
+The identity tier anchors the entire environment. These systems provide:
+
+- Kerberos authentication  
+- DNS service discovery  
+- Group Policy enforcement  
+- Directory object management  
+- Multi‑tier trust relationships  
+
+---
+
+## 💻 User Tier — CT‑CL01 (LAN_NET)
+
+### **CT‑CL01 — Domain Client**
+
+A realistic enterprise workstation used to model:
+
+- Credential harvesting  
+- User‑driven attack paths  
+- Lateral movement into server tiers  
+
+**Why it matters:**  
+Endpoints are the #1 initial compromise vector in real organizations.
+
+---
+
+## 🌐 CT‑WEB01 — Web Server (SERVER_NET)
+
+**Role:** Ubuntu‑based web and service hosting platform
 
 ### 🔧 Configuration
-- Joined to the Active Directory domain
-- Authenticates via Kerberos to CT-DC01
-- Uses DNS to locate domain services
+- Runs on **Ubuntu Server**
+- Hosts internal web applications or APIs
+- Communicates with CT‑SVR01 in the APP_TIER
+- Positioned in the SERVER_NET segment
 
 ### 🎯 Purpose in Lab
-- Simulates a real employee workstation
-- Target for:
-  - Credential harvesting
-  - Privilege escalation
-  - Lateral movement
+- Demonstrates web‑to‑app‑tier pivoting
+- Models real‑world Linux web infrastructure
+- Enables testing of misconfigurations, weak services, and exposed ports
 
 ### ⚠️ Security Considerations
-Client machines are often:
-- The **initial entry point** for attackers
-- Misconfigured or under-monitored
-- Used to pivot deeper into the network
+- Web servers are high‑exposure assets
+- Often targeted for initial footholds
+- Misconfigured services can leak credentials or internal paths
+
 
 ---
 
-## ⚡ TB-Kali01 — Attacker Machine (Thunderbyte)
+## 🖥️ CT‑SVR01 — Application Server (APP_TIER)
 
-**Role:** Offensive Security Platform (Red Team)
+**Role:** Ubuntu‑based application logic server**
 
-### 🔧 Tools & Capabilities
-- Nmap (network scanning)
-- BloodHound (AD enumeration)
-- Mimikatz (credential dumping)
-- Hydra / CrackMapExec (password attacks)
+### 🔧 Configuration
+- Runs on **Ubuntu Server**
+- Hosts internal application logic or middleware
+- Acts as the bridge between web and data tiers
 
-### 🎯 Objectives
-- Discover domain infrastructure
-- Enumerate users and services
-- Exploit misconfigurations
-- Escalate privileges
-- Move laterally across systems
+### 🎯 Purpose in Lab
+- Demonstrates multi‑tier lateral movement
+- Enables service account abuse scenarios
+- Models real enterprise app‑tier segmentation
 
----
+### ⚠️ Security Considerations
+- App servers often run elevated services
+- Misconfigurations can expose sensitive backend connections
+- Critical pivot point toward the DATA_TIER
 
-## 🌐 Network Configuration
-
-| Setting        | Value              |
-|----------------|-------------------|
-| Network Type   | Internal / Private|
-| Subnet         | 192.168.1.0/24    |
-| Gateway        | N/A (isolated lab)|
-| DNS Server     | 192.168.1.10      |
-
-### 🔒 Isolation
-
-This lab is intentionally isolated to:
-- Prevent external exposure
-- Allow safe attack simulation
-- Maintain full control over traffic
 
 ---
 
-## 🔁 Network Communication Flow
+## 🗄️ CT‑DB01 — Database Server (DATA_TIER)
 
-### 🧭 Authentication Flow
-1. User logs into **CT-CL01**
-2. Client sends authentication request to **CT-DC01 using Kerberos (TCP/UDP 88)**
-3. Domain Controller validates credentials via Kerberos
-4. Access is granted or denied
+**Role:** Ubuntu‑based backend data storage**
 
----
+### 🔧 Configuration
+- Runs on **Ubuntu Server**
+- Hosts PostgreSQL, MySQL, or another enterprise DB engine
+- Accessible only from the APP_TIER (CT‑SVR01)
 
-### 🌍 DNS Resolution Flow
-1. Client queries DNS (CT-DC01) over **port 53 (DNS)**
-2. DNS resolves domain resources (e.g., `company.local`)
-3. Client connects to requested service
+### 🎯 Purpose in Lab
+- Represents the “crown jewels” of the environment
+- Enables realistic data exfiltration and privilege escalation scenarios
+- Demonstrates secure tier‑to‑tier communication
 
----
+### ⚠️ Security Considerations
+- Databases are high‑value targets
+- Weak service accounts or open ports can lead to full compromise
+- Segmentation is critical to protect sensitive data
 
-### ⚔️ Attack Flow (Simulated)
-
-1. **TB-Kali01 scans network**
-2. Identifies:
-   - Domain Controller
-   - Open ports/services (e.g., 88, 389, 445)
-3. Performs enumeration using:
-   - **LDAP (TCP/389)** for directory queries
-   - **SMB (TCP/445)** for shares and lateral movement
-   - Leveraging tools such as:
-     - **Nmap** for network scanning
-     - **BloodHound** for Active Directory enumeration
-4. Executes attacks:
-   - Password spraying
-   - Credential dumping
-5. Gains access to:
-   - Client machine (CT-CL01)
-   - Member server (CT-SVR01)
-   - Potentially Domain Controller (CT-DC01)
----
-
-## 🧪 Example Attack Scenario
-
-1. Attacker performs Nmap scan to identify open ports (88, 389, 445)
-2. Uses LDAP enumeration to identify domain users
-3. Executes password spraying attack against discovered accounts
-4. Gains access to CT-CL01
-5. Dumps credentials using Mimikatz
-6. Moves laterally to CT-SVR01 via SMB
-7. Identifies service accounts or misconfigurations
-8. Escalates privileges and targets CT-DC01
----
-
-## 🔍 Detection Opportunities
-
-This lab environment provides visibility into common attacker behaviors such as enumeration, credential access, and lateral movement within an Active Directory network.
-
-By monitoring authentication activity, network communication, and system interactions, defenders can identify early indicators of compromise and respond before full domain takeover occurs.
-
-The following sections highlight key behaviors, logs, and events that can be used to detect malicious activity.
-
-### 🚨 Suspicious Activity to Monitor
-- Excessive authentication attempts (password spraying)
-- Unusual Kerberos ticket requests
-- Lateral movement between hosts
-- Enumeration of domain resources
-
-### 📊 Key Windows Event IDs   
-- Event ID 4625 — Failed logon attempts
-- Event ID 4768 / 4769 — Kerberos activity
-
-### 🛡️ Potential Logging Sources
-- Windows Event Logs (Security Logs)
-- Domain Controller authentication logs
-- PowerShell logging (if enabled)
 
 ---
 
-## 🎯 Lab Objectives
+## 🔥 Adversary Tier — TB‑KALI01 (ATTACK_NET)
 
-This environment is designed to practice:
+### **TB‑KALI01 — Thunderbyte Attacker System**
 
-### 🔴 Red Team Skills
-- Active Directory enumeration
-- Credential attacks
-- Privilege escalation
-- Lateral movement
+A fully isolated attacker network used for:
 
-### 🔵 Blue Team Skills
-- Monitoring authentication activity
-- Detecting suspicious behavior
-- Hardening AD configurations
-- Incident response
+- Enumeration  
+- Credential attacks  
+- Lateral movement  
+- Privilege escalation  
+- Multi‑tier exploitation
+  
+---
+
+
+## 🛡️ Security Controls Implemented
+
+This environment includes multiple defensive controls to mirror real enterprise security posture:
+
+- **Network Segmentation:** pfSense enforces strict boundaries between LAN, Server, App, Data, and Attacker tiers.
+- **Least Privilege Access:** Tier‑based access rules restrict east‑west movement.
+- **Identity Hardening:** Kerberos authentication, DNS‑based service discovery, and multi‑DC redundancy.
+- **Logging & Visibility:** Splunk Enterprise collects logs from domain controllers, clients, and servers.
+- **Endpoint Telemetry:** Sysmon and Windows Event Logging provide detailed process, authentication, and network visibility.
+- **Service Isolation:** Web, application, and database services run on separate Ubuntu hosts to reduce blast radius.
+
 
 ---
 
-## ⚠️ Security Considerations
+## 🛠️ What I Built Myself
 
-- This lab is for **educational use only**
-- All attacks are performed in a **controlled environment**
-- No connection to production or external networks
+This lab was designed, deployed, and configured entirely by me, including:
 
----
-
-## 🚀 Future Improvements
-
-To increase realism and complexity, future iterations of this lab may include:
-
-- Additional domain-joined hosts
-- Network segmentation (VLANs)
-- SIEM integration for log analysis
-- Endpoint detection and response (EDR) simulation
-- Privileged access management scenarios
-- Service account abuse scenarios (Kerberoasting)
-- Member server misconfiguration exploitation
+- **Network Architecture Design:** Planned and implemented a fully segmented enterprise topology with five distinct network tiers.
+- **pfSense Firewall Configuration:** Created VLANs, routing rules, NAT policies, and inter‑tier access controls.
+- **Active Directory Deployment:** Installed and configured two domain controllers, DNS, Kerberos, GPOs, and domain replication.
+- **Linux Server Build‑Out:** Deployed Ubuntu‑based web, application, and database servers with custom service configurations.
+- **SIEM Integration:** Installed Splunk, configured forwarders, and built detection‑focused dashboards.
+- **Adversarial Simulation Setup:** Configured a dedicated attacker network with Kali Linux and integrated offensive tooling.
+- **Documentation & Diagramming:** Authored all architecture documentation, diagrams, and environment summaries for clarity and recruiter readability.
 
 ---
 
-## 📁 File Structure Reference
+## 🧱 Segmentation & Traffic Flow
 
-    lab/
-    ├── lab-setup.md
-    ├── network-diagram.md
-    ├── assets/
-    │    └── network-diagram.jpg
+The pfSense firewall (CT‑FW01) enforces strict boundaries between all tiers:
 
----
+- LAN → Server → App → Data  
+- Attacker → LAN (controlled exposure)  
+- App → Data (restricted)  
 
-## 🧠 Key Takeaway
-
-This lab models a simplified enterprise Active Directory environment designed to replicate common attack paths and defensive challenges found in real-world networks, demonstrating how:
-
-- Identity infrastructure (Active Directory) is central to security
-- Misconfigurations can lead to full compromise
-- Attackers move methodically through environments
-- Defenders must monitor, detect, and respond effectively
+This models real enterprise segmentation strategies and forces attackers to navigate controlled pathways.
 
 ---
 
-🚀 *This is not just a lab — it’s a simulation of real-world cyber warfare.*
+## 📝 Key Takeaways
+
+- This lab is **not** a flat home lab — it’s a **tiered enterprise simulation**.  
+- It demonstrates my understanding of **identity security**, **network segmentation**, and **adversarial operations**.  
+
+
+---
+
+<div align="center">
+
+**Cloud Tech vs Thunderbyte — where enterprise security meets hands‑on adversarial engineering.**
+
+</div>
