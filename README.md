@@ -108,6 +108,9 @@ Each playbook breaks down the full defender workflow:
 - 🛠️ **Step‑by‑step remediation** — containment, eradication, and recovery actions  
 - 🔐 **Hardening recommendations** — long‑term fixes, policy updates, and prevention  
 
+👉 Explore the Defense Playbooks here:
+**https://github.com/CloudByBessie/Server-and-Cloud/tree/main/Defense-Playbooks**
+
 ---
 
 ### 📘 Featured Topics
