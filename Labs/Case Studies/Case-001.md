@@ -8,6 +8,14 @@
 
 </div>
 
+<div align="center">
+
+## ⚡ TL;DR 
+A misconfigured DNS and Active Directory environment caused authentication chaos across the enterprise.  
+This case demonstrates how CloudTech diagnosed and stabilized a Tier‑0 identity failure — restoring domain trust, rebuilding SRV records, and re‑establishing secure authentication paths.
+
+</div>
+
 
 
 <p align="center"> <img width="700" alt="Case001Upgrade" src="https://github.com/user-attachments/assets/6a0ee9ca-6fac-406c-a686-299b916f69c2" />
