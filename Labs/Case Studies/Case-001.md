@@ -1,7 +1,17 @@
-<p align="center">  <img width="700" alt="Case 001 The Domain That Couldnt Find Itself" src="https://github.com/user-attachments/assets/cf208d1a-a3a6-43e1-b989-3340518ca786" /> </p>
 
-# 🌩️ CloudTech Case 001 — “The Domain That Couldn’t Find Itself” 
-### Diagnosing and Stabilizing a Tier-0 Identity Failure in Active Directory
+
+<div align="center">
+
+# 🌩️ CloudTech Case 001 — “The Domain That Couldn’t Find Itself”  
+
+### Diagnosing and Stabilizing a Tier‑0 Identity Failure in Active Directory
+
+</div>
+
+
+
+<p align="center"> <img width="700" alt="Case001Upgrade" src="https://github.com/user-attachments/assets/6a0ee9ca-6fac-406c-a686-299b916f69c2" />
+  </p>
 
 ## 📚 Quick Navigation
 
