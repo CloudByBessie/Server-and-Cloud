@@ -14,18 +14,18 @@
 <details>
   <summary><strong>📚 Quick Navigation</strong></summary>
 
-- [Executive Summary](#-executive-summary)
-- [Environment Snapshot](#-environment-snapshot)
-- [Tools & Technologies Used](#️-tools--technologies-used)
-- [What Broke (Root Cause)](#-what-broke-root-cause)
-- [How I Investigated (Layered Troubleshooting)](#-how-i-investigated-layered-troubleshooting)
-- [How I Fixed It (Remediation-Steps)](#️-how-i-fixed-it-remediation-steps)
-- [Attacker POV](#-attacker-pov-condensed)
-- [Defender POV](#️-defender-pov-condensed)
-- [Impact](#-impact)
-- [Skills Demonstrated](#-skills-demonstrated)
-- [Why This Matters](#-why-this-matters)
-- [Final Takeaway](#-final-takeaway)
+- [Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-executive-summary)
+- [Environment Snapshot](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#%EF%B8%8F-environment-snapshot)
+- [Tools & Technologies Used](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#%EF%B8%8F-tools--technologies-used)
+- [What Broke (Root Cause)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-what-broke-root-cause)
+- [How I Investigated (Layered Troubleshooting)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-how-i-investigated-layered-troubleshooting)
+- [How I Fixed It (Remediation Steps)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#%EF%B8%8F-how-i-fixed-it-remediation-steps)
+- [Attacker POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-attacker-pov)
+- [Defender POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#%EF%B8%8F-defender-pov)
+- [Impact](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-impact)
+- [Skills Demonstrated](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-skills-demonstrated)
+- [Why This Matters](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-why-this-matters)
+- [Final Takeaway](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-002.md#-final-takeaway)
 
 </details>
 
