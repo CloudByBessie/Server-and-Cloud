@@ -28,7 +28,9 @@
 - [Final Takeaway](#-final-takeaway)
 
 </details>
+
 ---
+
 ## ⭐ Executive Summary
 After stabilizing identity services in Case 001, CloudTech’s environment still lacked internal security boundaries. From an internal foothold (TB‑KALI01), I enumerated SMB shares on CT‑SVR01 and discovered an over‑permissive deployment share (**IT‑Deploy**) accessible to any authenticated domain user.
 
