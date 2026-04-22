@@ -19,6 +19,24 @@ A new AD environment looked healthy but behaved unpredictably. Clients intermitt
 <p align="center"> <img width="700" alt="Case001Upgrade" src="https://github.com/user-attachments/assets/6a0ee9ca-6fac-406c-a686-299b916f69c2" />
   </p>
 
+
+<details>
+  <summary><strong>📚 Quick Navigation</strong></summary>
+
+- [Executive Summary](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-executive-summary)
+- [Environment Snapshot](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#%EF%B8%8F-environment-snapshot)
+- [What Broke (Root Cause)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-what-broke-root-cause)
+- [How I Investigated (Layered Troubleshooting)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-how-i-investigated-layered-troubleshooting)
+- [How I Fixed It (Remediation Steps)](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#%EF%B8%8F-how-i-fixed-it-remediation-steps)
+- [Attacker POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-attacker-pov)
+- [Defender POV](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#%EF%B8%8F-defender-pov)
+- [Impact](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-impact)
+- [Skills Demonstrated](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-skills-demonstrated)
+- [Why This Matters ](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-why-this-matters-recruiter-facing)
+- [Final Takeaway](https://github.com/CloudByBessie/Server-and-Cloud/blob/main/Labs/Case%20Studies/Case-001.md#-final-takeaway)
+
+</details>
+
 ---
 
 ## ⭐ Executive Summary
@@ -199,14 +217,14 @@ Multiple active NICs, APIPA addresses, and conflicting routes caused unpredictab
 **Key Principle:**  
 Multiple NICs without intentional design create instability — not redundancy.
 
-<img width="780"  alt="multipleadaptersdefender" src="https://github.com/user-attachments/assets/e2fa212c-3565-4f63-b125-19ec47b2a39b" />
+<img width="500"  alt="multipleadaptersdefender" src="https://github.com/user-attachments/assets/e2fa212c-3565-4f63-b125-19ec47b2a39b" />
 
 ---
 
 ### 🔑 Stale AD Objects
 Old computer accounts remained in Active Directory, causing trust failures and join conflicts.
 
-<img width="752"  alt="staleadobjectsdefender" src="https://github.com/user-attachments/assets/79380d50-8508-4549-8536-6f22bd4eb50d" />
+<img width="500"  alt="staleadobjectsdefender" src="https://github.com/user-attachments/assets/79380d50-8508-4549-8536-6f22bd4eb50d" />
 
 ---
 ## 📊 Impact
@@ -229,20 +247,8 @@ Old computer accounts remained in Active Directory, causing trust failures and j
 
 ---
 
-## 🎯 Why This Matters (Recruiter-Facing)
-This case demonstrates capabilities directly relevant to:
-
-- **Cloud Security Engineer**  
-- **Cloud Support Engineer (Azure)**  
-- **IAM Analyst**  
-- **DoD contractor roles**  
-
-It shows:
-
-- Tier‑0 troubleshooting discipline  
-- Identity dependency awareness  
-- Ability to stabilize misconfigured environments  
-- Strong documentation and communication skills  
+## 🎯 Why This Matters
+This case shows the ability to bring order to a failing identity system — restoring predictability, stability, and trust in the core of the environment. It demonstrates disciplined troubleshooting, deep understanding of identity dependencies, and the ability to communicate complex failures with clarity and precision.
 
 
 ---
