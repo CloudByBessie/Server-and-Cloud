@@ -150,7 +150,7 @@ These issues combined to create a silent privilege‑escalation path.
 
 ---
 
-## ⚡ Attacker POV (Condensed)
+## ⚡ Attacker POV 
 From an attacker’s perspective, the environment introduced itself:
 
 - SMB enumeration revealed an exposed deployment share  
@@ -163,7 +163,7 @@ It was **predictable, exposed, and overly trusting**.
 
 ---
 
-## 🛡️ Defender POV (Condensed)
+## 🛡️ Defender POV 
 A defender reviewing this incident would immediately recognize:
 
 - **SMB shares must never be broadly accessible**  
